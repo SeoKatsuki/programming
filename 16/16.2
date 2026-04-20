@@ -1,0 +1,13 @@
+# Уровень 2
+
+id_ok = input('Введите разрешенные айди')
+Id_ok = set(id_ok)
+
+vhod_id = input('Введите айди: ').split()
+
+for i in vhod_id:
+    if i in Id_ok:
+        print('OK')
+    else:
+        print('ADDED')
+        Id_ok.add(i)
