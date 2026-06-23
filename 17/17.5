@@ -17,10 +17,10 @@ def is_valid_password(password):
     a, b, c = parts
 
     palindrom = a == a[::-1]
-    prime = is_prime(int(b))
-    even = int(c) % 2 == 0
+    prost = is_prime(int(b))
+    chet = int(c) % 2 == 0
 
-    return palindrom and prime and even
+    return palindrom and prost and chet
 
 print(is_valid_password('1221:101:22'))
 print(is_valid_password('565:30:50'))
